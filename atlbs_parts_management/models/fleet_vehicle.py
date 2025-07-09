@@ -1,4 +1,4 @@
-from odoo import models, fields
+from odoo import models, fields,api
 
 
 
@@ -17,3 +17,4 @@ class OENumber(models.Model):
     name = fields.Char(string="OE Number", required=True)
     description = fields.Text(string="Description")
     vehicle_ids = fields.Many2many('fleet.vehicle', string="Linked Vehicles")
+
